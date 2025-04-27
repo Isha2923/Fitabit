@@ -1,7 +1,8 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "http://localhost:8000/api",
+  baseURL: "https://fitabit-lmfv.vercel.app/api",
+    //"http://localhost:8000/api",
   //"https://fitabit-backend.vercel.app/api", //correct one for deployed
   //   "https://fitnesstrack-vtv1.onrender.com/api/", //nor correct
 });
