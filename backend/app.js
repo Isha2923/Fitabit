@@ -23,8 +23,9 @@ mongoose
 app.use(express.json()); //pass incoming json data from the user
 //Cors
 const corsOptions = {
-  origin: ["http://localhost:5173"], //!write local website running link, server running on port 8000, port no and actual host no - both are diff things
+  //origin: ["http://localhost:5173"], //!write local website running link, server running on port 8000, port no and actual host no - both are diff things
   //origin: "https://fitabit.vercel.app",
+  origin: "https://fitabit-habit-of-fitness.vercel.app/",
   methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true,
 };
