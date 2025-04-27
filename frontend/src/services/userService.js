@@ -4,7 +4,8 @@ import axios from "axios"; //!used as httpclient (may - explore it )
 export const loginAPI = async ({ email, password }) => {
   //!destructure the argument getting from post request from user (email and pw provide)
   const response = await axios.post(
-    "http://localhost:8000/api/users/login",
+    // "http://localhost:8000/api/users/login",
+    "https://fitabit-lmfv.vercel.app/api/users/login",
     // "https://fitabit-backend.vercel.app/api/users/login",
     {
       email,
@@ -18,7 +19,8 @@ export const loginAPI = async ({ email, password }) => {
 //! Register // return a promise - copy from above - same as above -> and take 3 things from form - email, pw, and username.
 export const registerAPI = async ({ email, password, username }) => {
   const response = await axios.post(
-    "http://localhost:8000/api/users/register",
+    "https://fitabit-lmfv.vercel.app/api/users/register",
+    //"http://localhost:8000/api/users/register",
     //"https://fitabit-backend.vercel.app/api/users/register",
     {
       email,
@@ -33,8 +35,9 @@ export const registerAPI = async ({ email, password, username }) => {
 //! profile // return a promise - difference is get method -> and it needs to access/pass token -> need to provide authorization header in postman with value "bearer you_token"
 export const profileAPI = async (token) => {
   const response = await axios.get(
-    "http://localhost:8000/api/users/profile",
+    //"http://localhost:8000/api/users/profile",
     //"https://fitabit-backend.vercel.app/api/users/profile",
+    "https://fitabit-lmfv.vercel.app/api/users/profile",
     {
       headers: {
         Authorization: `Bearer ${token}`,
@@ -48,8 +51,9 @@ export const profileAPI = async (token) => {
 //!  // return a promise - copy from above - same as above -> and take 3 things from form - email, pw, and username.
 export const contactAPI = async ({ name, email, query }) => {
   const response = await axios.post(
-    "http://localhost:8000/api/users/contact",
+    //"http://localhost:8000/api/users/contact",
     //"https://fitabit-backend.vercel.app/api/users/contact",
+    "https://fitabit-lmfv.vercel.app/api/users/contact",
     {
       name,
       email,
