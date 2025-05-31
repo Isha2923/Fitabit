@@ -1,5 +1,7 @@
 # Fitabit - "Dedication + Fitness = A Better You. Fitabit Makes It Real!"
 
+## Fitabit Website Link - https://fitabit.vercel.app/
+
 
 ### Tech Stack: MERN (MongoDB, Express.js, React, Node.js), Tailwind CSS, Chart.js, Acternity UI)
 
